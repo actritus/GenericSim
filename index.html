@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generic Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Generic Simulation</h1>
+        </header>
+
+        <div class="sim-container">
+            <div class="sim-canvas">
+                <canvas id="simCanvas"></canvas>
+            </div>
+
+            <div class="sim-menu">
+                <h3>Control Panel</h3>
+                <br>
+                <form id="simControls">
+                    <label for="parameter1">Parameter 1:</label><br>
+                    <input type="range" id="parameter1" name="parameter1" min="0" max="100"><br><br>
+
+                    <label for="parameter2">Parameter 2:</label><br>
+                    <input type="number" id="parameter2" name="parameter2" min="1" max="10" value="5"><br><br>
+
+                    <label for="parameter3">Parameter 3:</label><br>
+                    <select id="parameter3" name="parameter3">
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                    </select><br><br>
+
+                    <button type="button" onclick="startSimulation()">Start Simulation</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="sim-description">
+            <h2>Science Behind the Simulation</h2>
+            <br>
+            <p>This simulation demonstrates the principles of [insert scientific concept]. The parameters you control affect the behaviour of the system in real-time, allowing you to observe the effects of different variables.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
